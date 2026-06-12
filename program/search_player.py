@@ -1,7 +1,13 @@
 from openai import OpenAI
 import re
+from dotenv import load_dotenv
+import os
 
-client = OpenAI(api_key="YOUR_API_KEY")
+load_dotenv()
+
+api_key = os.getenv("OPENAI_API_KEY")
+
+client = OpenAI(api_key=api_key)
 
 def find_instagram_username(person_name):
     response = client.responses.create(
