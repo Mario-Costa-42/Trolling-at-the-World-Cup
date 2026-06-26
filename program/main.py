@@ -3,6 +3,7 @@ import re
 import subprocess
 
 TEAM_NAME = input("Qual seleção vai ser moggada: ")
+Out_of_Cup = input("Quando eles saíram da Copa do Mundo?: ")
 
 with open("index.html", "r", encoding="utf-8") as f:
     html = f.read()
@@ -46,6 +47,6 @@ for element in heading.find_next_siblings():
 for position, players in squad.items():
     for player in players:
         subprocess.run(
-            ["python", "test.py", TEAM_NAME, position, player],
+            ["python", "data_center.py", TEAM_NAME, position, player, Out_of_Cup],
             check=True
         )

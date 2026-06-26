@@ -11,7 +11,7 @@ client = OpenAI(api_key=api_key)
 
 def find_instagram_username(person_name):
     response = client.responses.create(
-        model="gpt-5",
+        model="gpt-4o",
         tools=[{"type": "web_search"}],
         input=f"""
         Find the official Instagram account of the famous person "{person_name}".
