@@ -25,7 +25,7 @@ Player: {player}
 Country: {nation}
 Stage of elimination: {Out_of_Cup}
 Rules:
-* Write 5 roasts.
+* Write 2 roasts.
 * Sound like football Twitter/X banter. 
 * Be creative, very sarcastic, and meme-worthy. 
 * Focus on football performance, results, hype, expectations, and tournament failure.
